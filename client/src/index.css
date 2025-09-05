@@ -4,30 +4,30 @@
 @tailwind utilities;
 
 :root {
-  --background: hsl(25, 15%, 96%);
-  --foreground: hsl(25, 20%, 12%);
-  --card: hsl(25, 15%, 98%);
-  --card-foreground: hsl(25, 20%, 15%);
-  --popover: hsl(25, 15%, 98%);
-  --popover-foreground: hsl(25, 20%, 15%);
-  --primary: hsl(0, 65%, 45%);
+  --background: hsl(220, 15%, 96%);
+  --foreground: hsl(220, 20%, 12%);
+  --card: hsl(220, 15%, 98%);
+  --card-foreground: hsl(220, 20%, 15%);
+  --popover: hsl(220, 15%, 98%);
+  --popover-foreground: hsl(220, 20%, 15%);
+  --primary: hsl(220, 85%, 35%);
   --primary-foreground: hsl(0, 0%, 98%);
-  --secondary: hsl(25, 45%, 55%);
+  --secondary: hsl(200, 45%, 55%);
   --secondary-foreground: hsl(0, 0%, 98%);
-  --muted: hsl(25, 15%, 88%);
-  --muted-foreground: hsl(25, 10%, 45%);
-  --accent: hsl(32, 65%, 55%);
+  --muted: hsl(220, 15%, 88%);
+  --muted-foreground: hsl(220, 10%, 45%);
+  --accent: hsl(210, 75%, 45%);
   --accent-foreground: hsl(0, 0%, 98%);
   --destructive: hsl(0, 65%, 50%);
   --destructive-foreground: hsl(0, 0%, 98%);
-  --border: hsl(25, 20%, 85%);
-  --input: hsl(25, 20%, 90%);
-  --ring: hsl(0, 65%, 45%);
-  --chart-1: hsl(203, 88%, 53%);
-  --chart-2: hsl(160, 100%, 36%);
-  --chart-3: hsl(42, 93%, 56%);
-  --chart-4: hsl(147, 79%, 42%);
-  --chart-5: hsl(341, 75%, 51%);
+  --border: hsl(220, 20%, 85%);
+  --input: hsl(220, 20%, 90%);
+  --ring: hsl(220, 85%, 35%);
+  --chart-1: hsl(220, 88%, 53%);
+  --chart-2: hsl(200, 100%, 36%);
+  --chart-3: hsl(210, 93%, 56%);
+  --chart-4: hsl(190, 79%, 42%);
+  --chart-5: hsl(230, 75%, 51%);
   --radius: 0.75rem;
   --font-sans: 'Inter', sans-serif;
   --font-serif: 'Playfair Display', serif;
@@ -35,25 +35,25 @@
 }
 
 .dark {
-  --background: hsl(25, 15%, 8%);
-  --foreground: hsl(25, 15%, 95%);
-  --card: hsl(25, 15%, 10%);
-  --card-foreground: hsl(25, 15%, 90%);
-  --popover: hsl(25, 15%, 10%);
-  --popover-foreground: hsl(25, 15%, 90%);
-  --primary: hsl(0, 65%, 55%);
+  --background: hsl(220, 15%, 8%);
+  --foreground: hsl(220, 15%, 95%);
+  --card: hsl(220, 15%, 10%);
+  --card-foreground: hsl(220, 15%, 90%);
+  --popover: hsl(220, 15%, 10%);
+  --popover-foreground: hsl(220, 15%, 90%);
+  --primary: hsl(220, 85%, 55%);
   --primary-foreground: hsl(0, 0%, 98%);
-  --secondary: hsl(25, 45%, 45%);
+  --secondary: hsl(200, 45%, 45%);
   --secondary-foreground: hsl(0, 0%, 98%);
-  --muted: hsl(25, 15%, 15%);
-  --muted-foreground: hsl(25, 10%, 60%);
-  --accent: hsl(32, 65%, 45%);
+  --muted: hsl(220, 15%, 15%);
+  --muted-foreground: hsl(220, 10%, 60%);
+  --accent: hsl(210, 75%, 55%);
   --accent-foreground: hsl(0, 0%, 98%);
   --destructive: hsl(0, 65%, 50%);
   --destructive-foreground: hsl(0, 0%, 98%);
-  --border: hsl(25, 20%, 20%);
-  --input: hsl(25, 20%, 18%);
-  --ring: hsl(0, 65%, 45%);
+  --border: hsl(220, 20%, 20%);
+  --input: hsl(220, 20%, 18%);
+  --ring: hsl(220, 85%, 55%);
 }
 
 @layer base {
@@ -86,17 +86,17 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(45deg, transparent 30%, rgba(196, 30, 58, 0.1) 50%, transparent 70%);
+    background: linear-gradient(45deg, transparent 30%, rgba(55, 124, 196, 0.1) 50%, transparent 70%);
     z-index: 1;
   }
 
   .moroccan-pattern {
-    background-image: repeating-conic-gradient(from 0deg at 50% 50%, transparent 0deg, rgba(196, 30, 58, 0.1) 45deg, transparent 90deg);
+    background-image: repeating-conic-gradient(from 0deg at 50% 50%, transparent 0deg, rgba(55, 124, 196, 0.1) 45deg, transparent 90deg);
     background-size: 40px 40px;
   }
 
   .hero-gradient {
-    background: linear-gradient(135deg, hsl(0, 65%, 45%) 0%, hsl(25, 45%, 55%) 50%, hsl(32, 65%, 55%) 100%);
+    background: linear-gradient(135deg, hsl(220, 85%, 35%) 0%, hsl(200, 75%, 45%) 50%, hsl(210, 85%, 55%) 100%);
   }
 
   .card-hover {
@@ -104,12 +104,37 @@
   }
 
   .card-hover:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    transform: translateY(-8px);
+    box-shadow: 0 25px 50px -12px rgba(55, 124, 196, 0.25), 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+  }
+
+  .modern-card {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    transition: all 0.3s ease;
+  }
+
+  .modern-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 32px 64px -12px rgba(55, 124, 196, 0.3);
+    border-color: rgba(55, 124, 196, 0.3);
+  }
+
+  .glassmorphism {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  .dark .glassmorphism {
+    background: rgba(0, 0, 0, 0.1);
+    border-color: rgba(255, 255, 255, 0.1);
   }
 
   .text-gradient {
-    background: linear-gradient(135deg, hsl(0, 65%, 45%), hsl(32, 65%, 55%));
+    background: linear-gradient(135deg, hsl(220, 85%, 35%), hsl(210, 85%, 55%));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;

@@ -43,7 +43,7 @@ export default function FeaturedDestinations() {
           {featured.map((destination) => (
             <div 
               key={destination.id} 
-              className="relative h-80 rounded-xl overflow-hidden card-hover group cursor-pointer"
+              className="relative h-80 rounded-2xl overflow-hidden card-hover group cursor-pointer shadow-lg"
               data-testid={`card-destination-${destination.id}`}
             >
               <img 
@@ -51,7 +51,7 @@ export default function FeaturedDestinations() {
                 alt={destination.name}
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" 
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-primary/20 to-transparent"></div>
               <div className="absolute bottom-4 left-4 text-white">
                 <h3 className="text-xl font-bold serif mb-1" data-testid={`text-destination-name-${destination.id}`}>
                   {destination.name}
@@ -80,7 +80,7 @@ export default function FeaturedDestinations() {
                   alt={destination.name}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" 
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-primary/20 to-transparent"></div>
                 <div className="absolute bottom-4 left-4 text-white">
                   <h3 className="text-lg font-bold serif mb-1" data-testid={`text-destination-name-${destination.id}`}>
                     {destination.name}

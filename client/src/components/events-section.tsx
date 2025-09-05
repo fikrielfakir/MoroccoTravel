@@ -77,7 +77,7 @@ export default function EventsSection() {
             return (
               <div 
                 key={event.id} 
-                className="bg-background rounded-xl p-6 border border-border card-hover"
+                className="modern-card p-8 card-hover group"
                 data-testid={`card-event-${event.id}`}
               >
                 <div className="flex items-start space-x-4">

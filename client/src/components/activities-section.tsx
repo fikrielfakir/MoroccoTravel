@@ -65,7 +65,7 @@ export default function ActivitiesSection() {
           {activities?.map((activity) => (
             <div 
               key={activity.id} 
-              className="bg-background rounded-xl p-6 card-hover"
+              className="modern-card p-8 card-hover group"
               data-testid={`card-activity-${activity.id}`}
             >
               <div className={`w-16 h-16 ${getIconColorClass(activity.category)} rounded-xl flex items-center justify-center mb-4`}>
