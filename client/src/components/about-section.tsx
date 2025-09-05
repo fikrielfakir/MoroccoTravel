@@ -1,7 +1,7 @@
 export default function AboutSection() {
   return (
     <section id="about" className="py-20 bg-background">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto px-[124px]">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
             <h2 className="text-3xl sm:text-4xl font-bold serif text-primary mb-6" data-testid="text-about-title">

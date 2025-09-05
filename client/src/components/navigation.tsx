@@ -32,7 +32,7 @@ export default function Navigation() {
         ? "bg-primary backdrop-blur-md border-b border-primary/20" 
         : "bg-transparent border-b border-white/10"
     }`}>
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto px-[124px]">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Left side navigation - hidden on mobile */}
           <div className="hidden md:flex items-center space-x-6 flex-1">
@@ -88,7 +88,7 @@ export default function Navigation() {
 
       {mobileMenuOpen && (
         <div className={`md:hidden ${isScrolled ? 'bg-primary/95' : 'bg-black/90'} backdrop-blur-md border-b border-white/20`}>
-          <div className="px-4 pt-2 pb-3 space-y-1">
+          <div className="px-[124px] pt-2 pb-3 space-y-1">
             <button onClick={() => scrollToSection("home")} className="block px-3 py-2 text-white hover:text-blue-200 w-full text-left font-medium" data-testid="mobile-nav-home">
               Home
             </button>

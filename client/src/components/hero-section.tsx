@@ -42,7 +42,7 @@ export default function HeroSection() {
       <div className="absolute inset-0 bg-gradient-to-b from-primary/40 via-primary/20 to-primary/50"></div>
       
       {/* Content container */}
-      <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-4xl">
+      <div className="relative z-10 text-center px-[124px] max-w-none">
         <div className="mb-8">
           <div className="w-24 h-24 mx-auto mb-6 bg-white/10 backdrop-blur-sm rounded-full flex items-center justify-center border border-white/20">
             <img 

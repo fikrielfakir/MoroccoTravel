@@ -11,7 +11,7 @@ export default function ActivitiesSection() {
   if (isLoading) {
     return (
       <section id="activities" className="py-20 bg-card">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto px-[124px]">
           <div className="text-center mb-12">
             <h2 className="text-3xl sm:text-4xl font-bold serif text-primary mb-4">Our Activities</h2>
             <div className="h-6 bg-muted animate-pulse rounded mx-auto max-w-2xl"></div>
@@ -51,7 +51,7 @@ export default function ActivitiesSection() {
 
   return (
     <section id="activities" className="py-20 bg-card">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto px-[124px]">
         <div className="text-center mb-12">
           <h2 className="text-3xl sm:text-4xl font-bold serif text-primary mb-4" data-testid="text-activities-title">
             Our Activities
