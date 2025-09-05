@@ -1,4 +1,5 @@
-import { Mountain, Facebook, Instagram, Twitter, Youtube } from "lucide-react";
+import { Facebook, Instagram, Twitter, Youtube } from "lucide-react";
+import logoUrl from "@assets/creative-initial-letter-t-air-travel-logo-design-template-eps10-vector-removebg-preview_1757068670372.png";
 
 export default function Footer() {
   const scrollToSection = (sectionId: string) => {
@@ -13,8 +14,13 @@ export default function Footer() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="col-span-1 md:col-span-2">
-            <div className="flex items-center space-x-2 mb-4">
-              <Mountain className="text-primary text-2xl" />
+            <div className="flex items-center space-x-3 mb-4">
+              <img 
+                src={logoUrl} 
+                alt="Morocco Cultural Association" 
+                className="h-8 w-auto"
+                data-testid="footer-logo"
+              />
               <span className="text-xl font-bold serif text-primary" data-testid="text-footer-logo">
                 Morocco Cultural Association
               </span>
