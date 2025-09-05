@@ -11,18 +11,35 @@ export default function HeroSection() {
 
   return (
     <section id="home" className="relative h-screen flex items-center justify-center overflow-hidden">
-      {/* Hero background image */}
-      <div 
-        style={{
-          backgroundImage: "url('https://images.unsplash.com/photo-1544735716-392fe2489ffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80')",
-          backgroundSize: "cover",
-          backgroundPosition: "center"
-        }}
-        className="absolute inset-0"
-      ></div>
+      {/* Hero background video */}
+      <video
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="absolute inset-0 w-full h-full object-cover"
+      >
+        <source 
+          src="https://videos.pexels.com/video-files/3571264/3571264-uhd_2560_1440_25fps.mp4" 
+          type="video/mp4" 
+        />
+        <source 
+          src="https://videos.pexels.com/video-files/5532351/5532351-hd_1920_1080_30fps.mp4" 
+          type="video/mp4" 
+        />
+        {/* Fallback image if video fails to load */}
+        <div 
+          style={{
+            backgroundImage: "url('https://images.unsplash.com/photo-1544735716-392fe2489ffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80')",
+            backgroundSize: "cover",
+            backgroundPosition: "center"
+          }}
+          className="absolute inset-0 w-full h-full"
+        ></div>
+      </video>
       
       {/* Dark blue overlay */}
-      <div className="absolute inset-0 bg-gradient-to-b from-primary/30 via-primary/10 to-primary/40"></div>
+      <div className="absolute inset-0 bg-gradient-to-b from-primary/40 via-primary/20 to-primary/50"></div>
       
       {/* Content container */}
       <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-4xl">
